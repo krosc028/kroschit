@@ -235,6 +235,10 @@ nav{
 }
 
 /*------------------lines undernames---------------------*/
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+}
 
 #port_line{
     position: absolute;
