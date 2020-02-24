@@ -12,7 +12,6 @@ body{
     display: block;
 }
 
-
 a:hover{
     cursor: pointer;
     text-decoration-line: underline;
@@ -271,9 +270,8 @@ nav{
 /*------------------start of CSS for section---------------------*/
 section{
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
     position: relative;
-    padding: 40px;
     height: 325px;
     width: 100%;
 }
@@ -299,6 +297,7 @@ h2{
 }
 
 #logo_gif{
+    position: relative;
     display:block;
     margin: 0 auto;
     width: 300px;
@@ -314,20 +313,68 @@ article{
 }
 
 #img1 , #img4{
-
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: block;
+    height: auto;
     width: 100%;
 }
 
 #img2, #img5 , #img3, #img6{
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 footer{
     width: 100%;
     height: 75px;
 }
+
+#hov_img1 , #hov_img4{
+    position: relative;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+#hov_img2, #hov_img5 , #hov_img3, #hov_img6{
+    position: relative;
+    width: 100%;
+}
+.hover_box1, .hover_box2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #78bf8b;
+}
+#hov_img1:hover .hover_box1, #hov_img2:hover .hover_box2, #hov_img3:hover .hover_box2{
+    opacity: 1;
+}
+
+#hov_img4:hover .hover_box1, #hov_img5:hover .hover_box2, #hov_img6:hover .hover_box2{
+    opacity: 1;
+}
+
+
+article p{
+    text-align: center;
+    font-size: 28pt;
+    color: white;
+    font-weight: 400;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: auto;
+    position: relative;
+    top: 40%;
+}
+
+
+
 
 
 
